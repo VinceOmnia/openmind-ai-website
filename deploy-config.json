@@ -1,0 +1,67 @@
+{
+  "project": {
+    "name": "openmind-ai-website",
+    "description": "Openmind AI - AI Automation, Expert Training & Next-Generation AEO",
+    "version": "1.0.0",
+    "framework": "react",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "installCommand": "npm install"
+  },
+  "hosting": {
+    "vercel": {
+      "framework": "vite",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "installCommand": "npm install",
+      "nodeVersion": "18.x"
+    },
+    "netlify": {
+      "build": {
+        "command": "npm run build",
+        "publish": "dist"
+      },
+      "redirects": [
+        {
+          "from": "/blog/*",
+          "to": "/index.html",
+          "status": 200
+        },
+        {
+          "from": "/*",
+          "to": "/index.html",
+          "status": 200
+        }
+      ]
+    },
+    "cloudflare": {
+      "compatibility_date": "2024-01-01",
+      "build": {
+        "command": "npm run build",
+        "cwd": "/",
+        "watch_dir": "src"
+      }
+    }
+  },
+  "environment": {
+    "NODE_VERSION": "18",
+    "NPM_VERSION": "8",
+    "BUILD_COMMAND": "npm run build",
+    "INSTALL_COMMAND": "npm install"
+  },
+  "seo": {
+    "title": "Openmind AI - AI Automation, Expert Training & Next-Generation AEO",
+    "description": "Transform your business with AI automation, expert training, and AEO optimization. Achieve 300-500% ROI and 40-60% cost reduction in 8 weeks.",
+    "keywords": "AI automation, AEO optimization, AI training, business transformation, artificial intelligence, process automation, digital marketing, SEO, ChatGPT optimization",
+    "author": "Openmind AI",
+    "canonical": "https://openmind-ai.com"
+  },
+  "performance": {
+    "buildOptimizations": true,
+    "compression": "gzip",
+    "caching": {
+      "static": "1y",
+      "html": "1h"
+    }
+  }
+}
