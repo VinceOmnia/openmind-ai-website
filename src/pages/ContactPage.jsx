@@ -245,7 +245,7 @@ export function ContactPage() {
                     className="mt-1 border-gray-300 data-[state=checked]:bg-black data-[state=checked]:border-black"
                   />
                   <Label htmlFor="consent" className="text-sm text-gray-600 leading-relaxed">
-                    I agree to receive communications from Openmind AI about AI solutions and services. 
+                    I agree to receive communications from DOUSATSU about AI solutions and services. 
                     I understand I can unsubscribe at any time.
                   </Label>
                 </div>
@@ -285,7 +285,7 @@ export function ContactPage() {
                   <Mail className="h-5 w-5 text-black" />
                   <div>
                     <div className="font-medium text-black">Email</div>
-                    <div className="text-gray-600">chris@openmindai.co</div>
+                    <div className="text-gray-600">chris.hampson@dousatsu.co.uk</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -362,7 +362,7 @@ export function ContactPage() {
             {/* Value Proposition */}
             <Card className="p-6 border-gray-200">
               <CardHeader className="px-0 pt-0">
-                <CardTitle className="text-black">Why Choose Openmind AI?</CardTitle>
+                <CardTitle className="text-black">Why Choose DOUSATSU?</CardTitle>
               </CardHeader>
               <CardContent className="px-0 space-y-3">
                 <div className="flex items-center gap-2">

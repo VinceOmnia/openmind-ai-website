@@ -468,10 +468,10 @@ Ready to transform your business with AI automation? Our free consultation can h
             "dateModified": blogPost.date,
             "publisher": {
               "@type": "Organization",
-              "name": "Openmind AI",
+              "name": "DOUSATSU",
               "logo": {
                 "@type": "ImageObject",
-                "url": `${window.location.origin}/openmind-logo.webp`
+                "url": `${window.location.origin}/dousatsu-logo.svg`
               }
             },
             "mainEntityOfPage": {

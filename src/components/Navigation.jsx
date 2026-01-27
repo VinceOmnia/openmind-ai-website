@@ -26,13 +26,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            {/* Circle with dot logo */}
-            <div className="w-8 h-8 border-2 border-black rounded-full flex items-center justify-center">
-              <div className="w-3 h-3 bg-black rounded-full"></div>
-            </div>
-            <span className="text-xl font-bold text-black tracking-wide">
-              OPENMIND AI
-            </span>
+            <img src="/dousatsu-logo.svg" alt="DOUSATSU" className="h-8" />
           </Link>
 
           {/* Desktop Navigation */}

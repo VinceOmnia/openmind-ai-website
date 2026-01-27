@@ -1,7 +1,7 @@
 {
   "project": {
-    "name": "openmind-ai-website",
-    "description": "Openmind AI - AI Automation, Expert Training & Next-Generation AEO",
+    "name": "dousatsu-website",
+    "description": "DOUSATSU - AI Automation, Expert Training & Next-Generation AEO",
     "version": "1.0.0",
     "framework": "react",
     "buildCommand": "npm run build",
@@ -50,11 +50,11 @@
     "INSTALL_COMMAND": "npm install"
   },
   "seo": {
-    "title": "Openmind AI - AI Automation, Expert Training & Next-Generation AEO",
+    "title": "DOUSATSU - AI Automation, Expert Training & Next-Generation AEO",
     "description": "Transform your business with AI automation, expert training, and AEO optimization. Achieve 300-500% ROI and 40-60% cost reduction in 8 weeks.",
     "keywords": "AI automation, AEO optimization, AI training, business transformation, artificial intelligence, process automation, digital marketing, SEO, ChatGPT optimization",
-    "author": "Openmind AI",
-    "canonical": "https://openmind-ai.com"
+    "author": "DOUSATSU",
+    "canonical": "https://dousatsu.co.uk"
   },
   "performance": {
     "buildOptimizations": true,

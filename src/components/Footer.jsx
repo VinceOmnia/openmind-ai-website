@@ -9,11 +9,7 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <Brain className="h-8 w-8 text-primary" />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">OpenMind</span>
-                <span className="text-sm text-muted-foreground font-medium">AI</span>
-              </div>
+              <img src="/dousatsu-logo.svg" alt="DOUSATSU" className="h-8" />
             </Link>
             <p className="text-muted-foreground mb-4 max-w-md">
               Transform your business with AI automation, expert training, and next-generation AEO. 
@@ -22,7 +18,7 @@ export function Footer() {
             <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>chris@openmindai.co</span>
+                <span>chris.hampson@dousatsu.co.uk</span>
               </div>
             </div>
           </div>
@@ -52,7 +48,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 OpenMind AI. All rights reserved.
+            © 2024 DOUSATSU. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">

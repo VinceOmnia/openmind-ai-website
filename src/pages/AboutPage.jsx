@@ -102,7 +102,7 @@ export function AboutPage() {
           <div className="text-center max-w-4xl mx-auto">
             <Badge variant="secondary" className="mb-6 bg-gray-100 text-black">
               <Brain className="h-4 w-4 mr-2" />
-              About Openmind AI
+              About DOUSATSU
             </Badge>
             <h1 className="text-4xl sm:text-5xl font-bold text-black mb-6">
               Transforming Businesses Through 
@@ -125,12 +125,12 @@ export function AboutPage() {
               <h2 className="text-3xl font-bold text-black mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Openmind AI was founded on a simple observation: countless businesses were intrigued by AI's potential 
+                  DOUSATSU was founded on a simple observation: countless businesses were intrigued by AI's potential 
                   but intimidated by its complexity and cost. While tech giants dominated the headlines, small and 
                   medium-sized businesses struggled to find practical, affordable AI solutions that delivered real value.
                 </p>
                 <p>
-                  We created Openmind AI to bridge that gap. Instead of building complex custom solutions from scratch, 
+                  We created DOUSATSU to bridge that gap. Instead of building complex custom solutions from scratch, 
                   we leverage proven AI models from industry leaders like OpenAI, Claude, and Gemini, then customize them 
                   to address specific business challenges. This approach delivers enterprise-level capabilities at a 
                   fraction of traditional costs and implementation time.
@@ -236,7 +236,7 @@ export function AboutPage() {
               <CardContent className="text-center">
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Chris brings years of experience in AI implementation and business transformation. 
-                  His vision for making AI accessible to all businesses led to the creation of Openmind AI. 
+                  His vision for making AI accessible to all businesses led to the creation of DOUSATSU. 
                   Chris specializes in translating complex AI concepts into practical business solutions 
                   that deliver measurable results.
                 </p>
@@ -260,7 +260,7 @@ export function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-black mb-6">Why Choose Openmind AI?</h2>
+            <h2 className="text-3xl font-bold text-black mb-6">Why Choose DOUSATSU?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're not just another AI consulting firm. Here's what sets us apart.
             </p>
@@ -290,7 +290,7 @@ export function AboutPage() {
           <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl mb-8 text-gray-300">
             Let's build the future of your business together. Schedule a free consultation 
-            to learn how Openmind AI can help you achieve your goals.
+            to learn how DOUSATSU can help you achieve your goals.
           </p>
           <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100">
             <Link to="/contact">
