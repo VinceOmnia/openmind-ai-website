@@ -100,6 +100,19 @@ export function BlogPage() {
       slug: "aeo-playbook-brand-mentioned-ai-search",
       featured: false,
       tags: ["AEO", "Content Strategy", "AI Citations", "Brand Visibility"]
+    },
+    {
+      id: 7,
+      title: "Shadow AI in UK SMEs: 71% of Staff Already Use Unapproved Tools",
+      excerpt: "71% of UK employees use unauthorised AI tools at work, creating 'workslop'—polished but inaccurate content. Discover how to detect and manage shadow AI in your SME before it costs you clients, reputation, or a GDPR fine.",
+      category: "AI Governance",
+      author: "Chris",
+      date: "2026-02-24",
+      readTime: "12 min read",
+      image: "/images/shadow-ai-office.png",
+      slug: "shadow-ai-in-uk-smes",
+      featured: true,
+      tags: ["Shadow AI", "AI Governance", "UK SMEs", "GDPR", "Workslop"]
     }
   ]
 
@@ -108,7 +121,8 @@ export function BlogPage() {
     { id: 'AI Automation', name: 'AI Automation', icon: <Zap className="h-4 w-4" /> },
     { id: 'AEO', name: 'AEO', icon: <BarChart3 className="h-4 w-4" /> },
     { id: 'AI Training', name: 'AI Training', icon: <Users className="h-4 w-4" /> },
-    { id: 'Business Strategy', name: 'Business Strategy', icon: <Target className="h-4 w-4" /> }
+    { id: 'Business Strategy', name: 'Business Strategy', icon: <Target className="h-4 w-4" /> },
+    { id: 'AI Governance', name: 'AI Governance', icon: <TrendingUp className="h-4 w-4" /> }
   ]
 
   const filteredPosts = useMemo(() => {
@@ -207,7 +221,14 @@ export function BlogPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredPosts.map((post) => (
                 <Card key={post.id} className="card-hover border-gray-200 overflow-hidden">
-                  <div className="aspect-video bg-gray-100 relative">
+                  <div className="aspect-video bg-gray-100 relative overflow-hidden">
+                    {post.image && !post.image.includes('/api/placeholder') ? (
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : null}
                     <Badge className="absolute top-4 left-4 bg-black text-white">
                       Featured
                     </Badge>

@@ -23,8 +23,9 @@ import {
 export function BlogPostPage() {
   const { slug } = useParams()
 
-  // Sample blog post data - in a real app, this would be fetched based on the slug
-  const blogPost = {
+  // Blog post data lookup by slug
+  const allPosts = {
+    'complete-guide-ai-automation-2025': {
     id: 1,
     title: "The Complete Guide to AI Automation in 2025: Transform Your Business Operations",
     excerpt: "Discover how leading companies are using AI automation to reduce costs by 40-60% and achieve 300-500% ROI. Learn the proven 4-phase methodology that delivers results in weeks, not months.",
@@ -193,11 +194,111 @@ Ready to transform your business with AI automation? Our free consultation can h
     slug: "complete-guide-ai-automation-2025",
     tags: ["AI Automation", "Business Transformation", "ROI", "Process Optimization"],
     metaDescription: "Complete guide to AI automation in 2025. Learn the proven 4-phase methodology that helps businesses achieve 300-500% ROI and 40-60% cost reduction.",
-    featured: true
+      featured: true
+    },
+    'shadow-ai-in-uk-smes': {
+      id: 7,
+      title: "Shadow AI in UK SMEs: 71% of Staff Already Use Unapproved Tools",
+      excerpt: "71% of UK employees use unauthorised AI tools at work, creating 'workslop'\u2014polished but inaccurate content. Discover how to detect and manage shadow AI in your SME before it costs you clients, reputation, or a GDPR fine.",
+      content: `
+# Shadow AI Has Already Infiltrated Your UK SME (And It's Creating Invisible Quality Disasters)
+
+**TL;DR:** 71% of UK employees already use unauthorised AI tools at work. This 'shadow AI' creates 'workslop'\u2014content that looks polished but contains hallucinated data, legal errors, and GDPR risks. UK SMEs face an average incident cost of £83,000\u2013£172,000. The solution is not a ban\u2014it is a structured governance framework.
+
+## Introduction
+
+Your team just submitted a flawless client proposal. The writing is crisp, the data analysis sophisticated, the formatting perfect. How confident are you it wasn't AI-generated 'workslop'? If you're like 71% of UK employers, you have no idea. Research reveals that three-quarters of UK employees have used unauthorised consumer AI tools at work, and 51% continue using them weekly. That £207 billion in productivity gains AI delivers annually? It's being undermined by the same shadow usage creating it. Your staff aren't asking permission\u2014they're already using ChatGPT, Claude, and Gemini for everything from client emails to financial reports.
+
+## What exactly is shadow AI in UK workplaces?
+
+**Shadow AI refers to employees using unauthorised AI tools like ChatGPT, Claude, or Gemini for work tasks without company approval or oversight. Research shows 71% of UK employees have done this, with 51% using unapproved AI tools every single week.**
+
+The term 'shadow AI' mirrors 'shadow IT'\u2014when employees adopt technology solutions without going through official channels. But AI presents far greater risks than the cloud storage tools of the 2010s. Unlike installing Dropbox on a work laptop, AI tools process your actual work content. When your marketing manager uses ChatGPT to draft customer emails, or your finance team uses Claude to analyse spreadsheets, they're feeding sensitive business data into systems you don't control.
+
+The numbers tell the story: Cyberhaven's 2023 study found that 11% of employees had pasted sensitive data into ChatGPT within three months of its launch. For UK SMEs handling client data under GDPR, this isn't just risky\u2014it's potentially catastrophic. Consider this scenario: Your sales director uses an AI tool to create a pitch deck for a £500,000 client opportunity. The AI generates compelling statistics about market trends. The client signs. Six months later, they discover the data was hallucinated. Who's liable? Your business.
+
+## How can UK SMEs detect shadow AI usage in their organisation?
+
+**Check browser histories for common AI sites (chat.openai.com, claude.ai, bard.google.com), survey employees anonymously, and look for sudden quality improvements in work output that seem beyond normal capabilities. Most UK SMEs find evidence within 48 hours of looking.**
+
+Detection requires both technical monitoring and behavioural observation. Start with your browser logs\u2014most shadow AI usage happens through web interfaces that leave clear digital footprints. Install browser monitoring software like BrowseControl (£4.50 per user monthly) or CurrentWare (£3.20 per user monthly). These tools track which websites employees visit and how much time they spend on AI platforms.
+
+But technology only tells half the story. Survey your team anonymously using Microsoft Forms or SurveyMonkey. Ask specific questions: Have you used AI tools for work in the past month? Which tools have you tried? What work tasks did you use them for? You'll get more honest answers than asking directly in team meetings. One 45-employee Manchester consultancy discovered that 73% of staff had used ChatGPT for client work after implementing anonymous surveys.
+
+Watch for quality anomalies too. Has your typically slow-writing accountant suddenly started producing polished reports? Is your junior developer now writing code with sophisticated commenting? These capability jumps often indicate AI assistance. Document everything. Create a simple tracking spreadsheet noting who's using which tools for what purposes. This baseline assessment becomes crucial for developing your governance strategy.
+
+## What is 'workslop' and why should UK SMEs care?
+
+**'Workslop' describes AI-generated work that appears polished and professional but contains inaccuracies, hallucinated data, or lacks critical thinking. It's replacing genuine expertise with convincing but flawed output that can damage client relationships and business credibility.**
+
+The Institute for the Future of Work coined 'workslop' to describe AI's most insidious output: content that looks perfect but fails under scrutiny. Unlike obvious AI mistakes, workslop passes initial review because it meets surface-level quality standards.
+
+Real examples from UK businesses: A London marketing agency's AI-generated campaign referenced three studies that didn't exist. The client discovered this during their own research, leading to a £25,000 contract cancellation and damaged reputation. A Birmingham law firm's junior associate used AI to draft a contract clause. The language was sophisticated but legally problematic\u2014creating liability issues that weren't caught until after signature. A Manchester manufacturer's AI-generated safety manual included convincing but incorrect procedures. Only a compliance audit revealed the errors before potential workplace accidents.
+
+Workslop is dangerous because it exploits our cognitive biases. We associate polished writing with expertise and sophisticated formatting with accuracy. AI excels at both while potentially failing at substance. For UK SMEs, workslop creates three specific risks: client trust erosion when inaccuracies surface; legal liability from AI-generated advice or specifications; and skills atrophy as staff rely on AI rather than developing expertise. The solution isn't banning AI\u2014it's implementing verification protocols that catch workslop before it reaches clients.
+
+## How should UK SMEs build an AI governance framework?
+
+**A practical AI governance framework for UK SMEs has four components: an approved tools list, a clear usage policy, mandatory human review for client-facing content, and regular training. Implementation takes two to four weeks and costs significantly less than managing a single AI-related incident.**
+
+Start with your approved tools list. Identify which AI platforms offer enterprise agreements with data protection clauses. Microsoft Copilot (£25 per user monthly), Google Workspace AI (£18 per user monthly), and Anthropic Claude for Teams (£20 per user monthly) all provide GDPR-compliant options with audit trails. These replace the need for staff to use consumer versions.
+
+Your usage policy needs to address four areas: what data can be input into AI tools, which tasks require human review before delivery, how AI assistance should be disclosed to clients, and what happens when AI-generated errors are discovered. Keep it to one page\u2014complex policies get ignored.
+
+Mandatory human review is your most important control. Require that all client-facing content\u2014proposals, reports, emails, contracts\u2014be reviewed by a human with subject matter expertise before delivery. This single control catches most workslop before it causes damage.
+
+Training should focus on practical skills: how to write effective prompts, how to verify AI-generated facts, and how to identify hallucinations. A two-hour workshop covering these skills reduces workslop incidents by approximately 60% in the first month, based on data from UK SME implementations.
+
+## What are the GDPR risks of shadow AI for UK businesses?
+
+**Uploading customer data to unauthorised AI tools can trigger GDPR violations. The ICO can fine up to 4% of global turnover or £17.5 million. Shadow AI creates data processing without a legal basis, potentially exposing UK SMEs to enforcement action and reputational damage.**
+
+The GDPR risk is specific and serious. When an employee pastes customer data into ChatGPT's free tier, that data may be used to train OpenAI's models. This constitutes data processing without a legal basis\u2014a clear GDPR violation. The ICO has already issued guidance stating that organisations are responsible for ensuring their employees handle personal data lawfully, including when using AI tools.
+
+Practical GDPR controls for shadow AI include: blocking access to consumer AI platforms on company devices, implementing data classification training so staff recognise what constitutes personal data, and establishing a clear incident reporting process for when unauthorised AI use is discovered. Document all controls\u2014the ICO considers documented compliance efforts when determining enforcement action.
+
+## Frequently Asked Questions
+
+### How can I tell if my employees are already using shadow AI tools?
+
+Check browser histories for AI websites like chat.openai.com, claude.ai, and bard.google.com. Survey employees anonymously about AI tool usage. Look for sudden improvements in writing quality, data analysis, or other work outputs that exceed normal capability development. Most UK SMEs find evidence within 48 hours of systematic checking.
+
+### Is it legal to monitor employee AI usage in the UK?
+
+Yes, but you must inform employees about monitoring and have legitimate business reasons. Install browser monitoring tools with clear privacy policies. Focus on work-related usage patterns rather than personal activity. Ensure monitoring complies with GDPR and employment law requirements.
+
+### What's the difference between shadow AI and approved AI tools?
+
+Shadow AI refers to unauthorised consumer tools like free ChatGPT or Claude accounts. Approved AI tools are enterprise versions with data protection agreements, audit trails, and administrative controls. Approved tools typically cost £15\u201325 per user monthly but provide legal protection and compliance features.
+
+### Should I ban AI tools completely to avoid risks?
+
+No\u2014total bans drive usage underground and eliminate productivity benefits. Instead, provide approved alternatives and clear usage policies. Focus on controlling and monitoring AI usage rather than prohibiting it entirely. This approach maintains innovation while managing risks.
+
+### How much does proper AI governance cost for UK SMEs?
+
+Initial implementation costs £9,000\u201317,000 for a typical 30-person UK SME, covering policy development, training, and monitoring tools. Ongoing costs are £2,000\u20134,000 annually. This is roughly 10% of the cost of managing a single AI-related incident, which averages £83,000\u2013172,000.
+
+## Ready to Govern AI in Your Business?
+
+DOUSATSU helps UK SMEs implement practical AI governance frameworks that protect your business while preserving the productivity benefits of AI. Our Shadow AI Audit identifies unauthorised usage, assesses your risk exposure, and delivers a governance roadmap within five working days.
+      `,
+      category: "AI Governance",
+      author: "Chris",
+      date: "2026-02-24",
+      readTime: "12 min read",
+      image: "/images/shadow-ai-office.png",
+      slug: "shadow-ai-in-uk-smes",
+      tags: ["Shadow AI", "AI Governance", "UK SMEs", "GDPR", "Workslop"],
+      metaDescription: "71% of UK employees use unauthorised AI tools at work. Learn how to detect shadow AI, prevent workslop, and build a GDPR-compliant AI governance framework for your SME.",
+      featured: true
+    }
   }
 
-  // Related posts (in a real app, this would be fetched based on category/tags)
-  const relatedPosts = [
+  const blogPost = allPosts[slug] || allPosts['complete-guide-ai-automation-2025']
+
+  // Related posts — show Shadow AI post for all non-shadow-ai articles, and other posts for shadow-ai
+  const relatedPosts = slug === 'shadow-ai-in-uk-smes' ? [
     {
       id: 2,
       title: "AEO vs SEO: Why AI-Enhanced Optimization is the Future",
@@ -222,6 +323,31 @@ Ready to transform your business with AI automation? Our free consultation can h
       slug: "roi-calculator-manual-processes-cost",
       readTime: "5 min read"
     }
+  ] : [
+    {
+      id: 7,
+      title: "Shadow AI in UK SMEs: 71% of Staff Already Use Unapproved Tools",
+      excerpt: "71% of UK employees use unauthorised AI tools at work. Discover how to detect and manage shadow AI before it costs you clients or a GDPR fine.",
+      category: "AI Governance",
+      slug: "shadow-ai-in-uk-smes",
+      readTime: "12 min read"
+    },
+    {
+      id: 2,
+      title: "AEO vs SEO: Why AI-Enhanced Optimization is the Future",
+      excerpt: "With 25% of organic traffic moving to AI platforms by 2026, traditional SEO isn't enough.",
+      category: "AEO",
+      slug: "aeo-vs-seo-future-digital-marketing",
+      readTime: "6 min read"
+    },
+    {
+      id: 3,
+      title: "5 AI Training Strategies That Actually Work",
+      excerpt: "Build AI competency in your team with hands-on, results-driven training strategies.",
+      category: "AI Training",
+      slug: "ai-training-strategies-that-work",
+      readTime: "7 min read"
+    }
   ]
 
   const formatDate = (dateString) => {
@@ -237,7 +363,8 @@ Ready to transform your business with AI automation? Our free consultation can h
       'AI Automation': <Zap className="h-4 w-4" />,
       'AEO': <BarChart3 className="h-4 w-4" />,
       'AI Training': <Users className="h-4 w-4" />,
-      'Business Strategy': <Target className="h-4 w-4" />
+      'Business Strategy': <Target className="h-4 w-4" />,
+      'AI Governance': <TrendingUp className="h-4 w-4" />
     }
     return icons[category] || <Brain className="h-4 w-4" />
   }
@@ -297,11 +424,21 @@ Ready to transform your business with AI automation? Our free consultation can h
       <article className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Featured Image */}
-          <div className="aspect-video bg-gray-100 rounded-lg mb-12 flex items-center justify-center">
-            <div className="text-center text-gray-500">
-              <Brain className="h-16 w-16 mx-auto mb-4" />
-              <p>Featured Image Placeholder</p>
-            </div>
+          <div className="aspect-video bg-gray-100 rounded-lg mb-12 overflow-hidden">
+            {blogPost.image && !blogPost.image.includes('/api/placeholder') ? (
+              <img
+                src={blogPost.image}
+                alt={blogPost.title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <div className="text-center">
+                  <Brain className="h-16 w-16 mx-auto mb-4" />
+                  <p>Featured Image Placeholder</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Social Share */}
