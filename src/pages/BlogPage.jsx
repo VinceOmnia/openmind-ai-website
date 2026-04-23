@@ -102,6 +102,19 @@ export function BlogPage() {
       tags: ["AEO", "Content Strategy", "AI Citations", "Brand Visibility"]
     },
     {
+      id: 8,
+      title: "Claude AI Training for UK SMEs: Why 90% Fail Without Structured Implementation",
+      excerpt: "Between 2024 and 2025, UK SME AI adoption surged 14 percentage points. Yet nine out of ten businesses adopting AI tools fail to translate those investments into significant productivity gains.",
+      category: "AI Training",
+      author: "Chris",
+      date: "2026-04-23",
+      readTime: "8 min read",
+      image: "/claude-ai-training-smes.png",
+      slug: "claude-ai-training-uk-smes-structured-implementation",
+      featured: true,
+      tags: ["Claude AI", "AI Training", "UK SMEs", "Productivity", "Implementation"]
+    },
+    {
       id: 7,
       title: "Shadow AI in UK SMEs: 71% of Staff Already Use Unapproved Tools",
       excerpt: "71% of UK employees use unauthorised AI tools at work, creating 'workslop'—polished but inaccurate content. Discover how to detect and manage shadow AI in your SME before it costs you clients, reputation, or a GDPR fine.",
